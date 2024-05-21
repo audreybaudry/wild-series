@@ -15,6 +15,12 @@ router.use("/programs", browseRouter);
 
 /* ************************************************************************* */
 
+const categoryRouter = require("./categories/router");
+
+router.use("/categories", categoryRouter);
+
+/* ************************************************************************* */
+
 const itemsRouter = require("./items/router");
 
 router.use("/items", itemsRouter);
